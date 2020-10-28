@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;900&display=swap');
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: rgb(202, 192, 199);
+  color: rgb(202, 192, 199);
+  font-size: small;
+  line-height: normal;
+}
+
+h1 h2 h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+ul li {
+  display: inline;
+  padding: 20px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+  .card {
+    width: 400;
+  }
+  ul {
+    margin-left: 90px;
+  }
+  
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+  .card {
+    width: 350;
+  }
+  ul {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+  .card {
+    width: 200px;
+  }
+  ul {
+    margin-left: 20px;
+  }
+}
+
+.card {
+  background: white;                         /* White background */
+  padding: 30px;                             /* Internal space */
+  border-radius: 4px;                        /* Small radius */
+  box-shadow: 20px 10px 30px rgba(0,0,0,.1);    /* Light shadow */
+  margin: 15px auto;
+}
+
+.container {                        /* White background */
+  padding: 30px;                             /* Internal space */
+  border-radius: 4px;                        /* Small radius */
+  box-shadow: 20px 10px 30px rgba(0,0,0,.1);    /* Light shadow */
+  margin: 0 auto;
+  background-color: rgb(165, 123, 151);
+  color: rgb(173, 130, 130);
+}
+
+img {
+  border-radius: 45%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+link {
+  text-decoration: none;
+}
+
+.zoom {
+  padding: 0px;
+  transition: transform .2s; /* Animation */
+  background-color: rgb(250, 249, 250);
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+}
+.zoom:hover {
+  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.social {
+  margin-left: 10%;
+}
